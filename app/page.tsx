@@ -91,7 +91,7 @@ export default function Home() {
                         </p>
                     </div>
 
-                    {[...Array(12)].map((_, index) => (
+                    {[...Array(8)].map((_, index) => (
                         <div key={index} className="gallery-item">
                             <div className="p-4">
                                 <h3 className="text-lg font-semibold mb-2">Item {index + 1}</h3>
