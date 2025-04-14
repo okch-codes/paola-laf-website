@@ -49,9 +49,8 @@ export default function Home() {
                     <div className="gallery-item">
                         <p className="text-gray-600">
                             <iframe
-                                style={{ borderRadius: '12px' }}
+                                style={{ borderRadius: '12px', width: '100%' }}
                                 src="https://open.spotify.com/embed/playlist/6JRslkUYUjucuMHTbDkQls?utm_source=generator"
-                                width="100%"
                                 height="352"
                                 frameBorder="0"
                                 allowFullScreen
@@ -64,9 +63,8 @@ export default function Home() {
                     <div className="gallery-item">
                         <p className="text-gray-600">
                             <iframe
-                                style={{ borderRadius: '12px' }}
+                                style={{ borderRadius: '12px', width: '100%' }}
                                 src="https://open.spotify.com/embed/playlist/36Qe0y0Vbrlxqtge6DFaGM?utm_source=generator"
-                                width="100%"
                                 height="352"
                                 frameBorder="0"
                                 allowFullScreen
@@ -79,9 +77,8 @@ export default function Home() {
                     <div className="gallery-item">
                         <p className="text-gray-600">
                             <iframe
-                                style={{ borderRadius: '12px' }}
+                                style={{ borderRadius: '12px', width: '100%' }}
                                 src="https://open.spotify.com/embed/playlist/2nnHiWBqmhTgqcscZ5FcXX?utm_source=generator"
-                                width="100%"
                                 height="352"
                                 frameBorder="0"
                                 allowFullScreen
