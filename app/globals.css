@@ -56,7 +56,6 @@ body {
   border-radius: 0.5rem;
   max-width: 350px;
   box-shadow: 12px 0 15px -15px rgba(195, 199, 204, 0.8), -12px 0 8px -4px rgba(206, 206, 206, 0.8);
-
   margin-bottom: 1rem;
 }
 
@@ -80,7 +79,6 @@ body {
 
 .gallery-item-loader {
   background-color: #f1f1f1;
-  opacity: .5;
   border-radius: 0.5rem;
 }
 

@@ -84,7 +84,7 @@ export default function Home() {
 
     // Loader component
     const Loader = () => (
-        <div className="w-[300px] h-[352px] gallery-item-loader absolute inset-0 flex justify-center items-center bg-gray-100 bg-opacity-90 rounded-xl z-10">
+        <div className="w-[300px] h-full gallery-item-loader absolute inset-0 flex justify-center items-center bg-gray-100 bg-opacity-90 rounded-xl z-10">
             <div className="flex flex-col items-center text-center">
                 <div className="mb-2">
                     <span className="loader-dot"></span>
