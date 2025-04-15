@@ -36,6 +36,19 @@ body {
   min-height: 100%;
 }
 
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.left-column li:hover, .left-column li:active  {
+  cursor: pointer;
+  font-weight: bold;
+}
+
 /* Right column */
 .right-column {
   padding: 1.5rem;
@@ -54,13 +67,17 @@ body {
 .gallery-item {
   background-color: white;
   border-radius: .75rem;
-  max-width: 350px;
   box-shadow: 12px 0 15px -15px rgba(195, 199, 204, 0.8), -12px 0 8px -4px rgba(206, 206, 206, 0.8);
   margin-bottom: 1rem;
 }
 
+li > a {
+  text-decoration: none;
+  color: black;
+}
+
 .gallery-item img {
-  border-radius: .75rem;
+  border-radius: .75rem .75rem 0 0;
 }
 
 /* Custom scrollbar styles */
