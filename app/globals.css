@@ -137,3 +137,8 @@ li > a {
     opacity: 0;
   }
 }
+
+.m-sc {
+  margin-right: 1rem;
+  margin-bottom: 1rem;
+}

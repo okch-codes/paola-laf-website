@@ -30,7 +30,16 @@ type TextItem = {
   tags: string[];
 };
 
-type GalleryItem = PlaylistItem | ImageLinkItem | TextItem;
+type SoundCloudItem = {
+  type: "soundcloud";
+  id: string;
+  width: string;
+  height: string;
+  url: string;
+  tags: string[];
+};
+
+type GalleryItem = PlaylistItem | ImageLinkItem | TextItem | SoundCloudItem;
 
 export default function Home() {
   // Gallery items data
@@ -60,24 +69,20 @@ export default function Home() {
       tags: ["music", "playlist"],
     },
     {
-      type: "imageLink",
+      type: "soundcloud",
       id: "image1",
-      imageUrl:
-        "https://images.unsplash.com/photo-1591779051696-1c3fa1469a79?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-      linkUrl: "https://example.com",
-      title: "Lorem Ipsum",
-      description: "Click to visit example.com",
+      url: "",
       width: "300px",
-      height: "230px",
-      tags: ["image", "sound"],
-    }
+      height: "300px",
+      tags: ["image", "radio"],
+    },
   ];
 
   // Create loading states for playlists
   const [loadedItems, setLoadedItems] = useState<Record<string, boolean>>({});
 
   // Add state for selected tag
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+  const [selectedTag, setSelectedTag] = useState<string | null>("home");
 
   // Add a state to track the active menu item
   const [activeMenuItem, setActiveMenuItem] = useState<string | null>(null);
@@ -133,7 +138,7 @@ export default function Home() {
       case "imageLink":
         return (
           <div key={item.id} className="gallery-item">
-            <a href={item.linkUrl}>
+            <a href={item.linkUrl} target="_blank">
               <Image
                 src={item.imageUrl}
                 alt={item.title}
@@ -143,29 +148,18 @@ export default function Home() {
                 onLoad={() => handleContentLoad(item.id)}
               />
             </a>
-            <div className="p-5">
-              <a href={item.linkUrl}>
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
-                  {item.title}
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                {item.description}
-              </p>
-              <a
-                href={item.linkUrl}
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
-              >
-                Read more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                ></svg>
-              </a>
-            </div>
+            {(item.title || item.description) && (
+              <div className="p-5">
+                <a href={item.linkUrl}>
+                  <h5 className="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
+                    {item.title}
+                  </h5>
+                </a>
+                <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+                  {item.description}
+                </p>
+              </div>
+            )}
           </div>
         );
 
@@ -176,6 +170,111 @@ export default function Home() {
               <h3 className="text-lg font-semibold mb-2">{item.title}</h3>
               <p className="text-gray-600">{item.content}</p>
             </div>
+          </div>
+        );
+
+      case "soundcloud":
+        return (
+          <div>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528834&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528471&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527877&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527343&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525855&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525171&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896523944&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896522486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521076&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
+            <iframe
+              className="m-sc"
+              width="200"
+              height="200"
+              scrolling="no"
+              frameBorder="no"
+              allow="autoplay"
+              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896518937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+            ></iframe>
           </div>
         );
 
@@ -191,19 +290,19 @@ export default function Home() {
         <nav className="space-y-2">
           <ul className="list-none">
             <li>
-              <b>ciao, sono paola</b>
+              <b>hi, sono paola</b>
             </li>
             <p></p>
             <li
               onClick={() => {
-                setSelectedTag(null);
+                setSelectedTag("home");
                 setActiveMenuItem("all");
               }}
               className={`cursor-pointer ${
                 activeMenuItem === "all" ? "font-bold" : ""
               }`}
             >
-              all
+              home
             </li>
             <li
               onClick={() => {
@@ -261,7 +360,11 @@ export default function Home() {
             </ul>
           </ul>
           <ul className="list-none">
-            <li><a target="_blank" href="https://www.instagram.com/paolalaf">instagram</a></li>
+            <li>
+              <a target="_blank" href="https://www.instagram.com/paolalaf">
+                instagram
+              </a>
+            </li>
             <li>contact</li>
           </ul>
         </nav>
