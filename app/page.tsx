@@ -565,7 +565,7 @@ export default function Home() {
         <nav className="space-y-2">
           <ul className="list-none">
             <li className="not-bold-on-hover">
-              <b>hi, I'm Paola</b>
+              <b>hi, I&apos;m Paola</b>
             </li>
             <p></p>
             <li
