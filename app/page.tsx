@@ -175,7 +175,7 @@ export default function Home() {
 
       case "soundcloud":
         return (
-          <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+          <div style={{ display: "flex", flexDirection: "row", gap: "20px" }} key={1}>
             <div>
               <h2>VISLA.FM 🇰🇷</h2>
               <iframe
