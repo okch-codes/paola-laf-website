@@ -175,106 +175,381 @@ export default function Home() {
 
       case "soundcloud":
         return (
-          <div>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528834&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528471&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527877&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527343&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525855&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525171&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896523944&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896522486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521076&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
-            <iframe
-              className="m-sc"
-              width="200"
-              height="200"
-              scrolling="no"
-              frameBorder="no"
-              allow="autoplay"
-              src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896518937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
-            ></iframe>
+          <div style={{ display: "flex", flexDirection: "row", gap: "20px" }}>
+            <div>
+              <h2>VISLA.FM 🇰🇷</h2>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/2058716828&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/r-PJvmJLsFw?si=sS9OphSBiuGjBdod"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/rnuTuqKd4Zg?si=ukNBtGoRLOwmo3kV"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/dkgOt8U9rRc?si=x0WT2ODIHPJDZs2b"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/QnFhD9kla9U?si=1ATUO561SQVrDxLQ"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/JP-29acyeSA?si=ohHm0nXEtHWV86Zl"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1862822058&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/NUAXGyu-PjM?si=gi5hQ1YcHQS74B2G"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/od_DWJegQVs?si=Uo9a7fzfzMZaTztl"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/QF79eyt59NM?si=ALldDYEMtNWg7TXk"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/EnktiamP3W4?si=HTw2Nu7Z17JTciYX"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/qKgWriZbc9o?si=HkK6tKXF_U8p4GHG"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/OiVa-KB9jsc?si=nCa6Jqf9X4TxEtlk"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/eykmq7BL5P0?si=vZEBm_nO_qf5ln6j"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/ctUNBogrtqE?si=RuMZYYxsLAK8d1DI"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/RPWke0pVL-U?si=mZOQHp0KMmr-9VU5"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/N0rdCd046DM?si=lSlEHF5e5R0hHGfj"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/zVFSl_-LLFg?si=3FpJrfEBYD914F4M"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                src="https://www.youtube.com/embed/pcPOSic0wLI?si=NpXVEohxOCY8DQMd"
+                title="YouTube video player"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1533889078&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            </div>
+            <div>
+              <h2>RADIO ALHARA 🇵🇸</h2>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528834&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896528471&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527877&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896527343&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525855&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896525171&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896523944&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896522486&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521718&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896521076&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+              <iframe
+                className="m-sc"
+                width="250"
+                height="200"
+                scrolling="no"
+                frameBorder="no"
+                allow="autoplay"
+                src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1896518937&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"
+              ></iframe>
+            </div>
+            <div>
+              <h2>PLAYLISTS 🎧</h2>
+              <div className="text-gray-600 relative" key={"playlist1"}>
+                <iframe
+                  className="rounded-xl"
+                  width="250"
+                  height="250"
+                  src={`https://open.spotify.com/embed/playlist/0gc1k0u2HxHeQV4qjaWP28?utm_source=generator`}
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  onLoad={() => handleContentLoad(item.id)}
+                ></iframe>
+              </div>
+              <div className="text-gray-600 relative" key={"playlist2"}>
+                <iframe
+                  className="w-250 h-250 rounded-xl"
+                  width="250"
+                  height="250"
+                  src={`https://open.spotify.com/embed/playlist/2nnHiWBqmhTgqcscZ5FcXX?utm_source=generator`}
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  onLoad={() => handleContentLoad(item.id)}
+                ></iframe>
+              </div>
+              <div className="text-gray-600 relative" key={"playlist3"}>
+                <iframe
+                  className="w-250 h-250 rounded-xl"
+                  width="250"
+                  height="250"
+                  src={`https://open.spotify.com/embed/playlist/36Qe0y0Vbrlxqtge6DFaGM?utm_source=generator`}
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  onLoad={() => handleContentLoad(item.id)}
+                ></iframe>
+              </div>
+              <div className="text-gray-600 relative" key={"playlist4"}>
+                <iframe
+                  className="w-250 h-250 rounded-xl"
+                  width="250"
+                  height="250"
+                  src={`https://open.spotify.com/embed/playlist/6JRslkUYUjucuMHTbDkQls?utm_source=generator`}
+                  frameBorder="0"
+                  allowFullScreen
+                  allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+                  loading="lazy"
+                  onLoad={() => handleContentLoad(item.id)}
+                ></iframe>
+              </div>
+            </div>
           </div>
         );
 
@@ -289,8 +564,8 @@ export default function Home() {
       <div className="left-column">
         <nav className="space-y-2">
           <ul className="list-none">
-            <li>
-              <b>hi, sono paola</b>
+            <li className="not-bold-on-hover">
+              <b>hi, I'm Paola</b>
             </li>
             <p></p>
             <li
